@@ -1,1 +1,1 @@
-# rsschool-cv--new
+https://chspeth.github.io/rsschool-cv/cv
