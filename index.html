@@ -11,7 +11,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#skills">Hard & soft skills</a>
+            <a class="navigation-link" href="#skills">Hard &amp; soft skills</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#projects">My projects</a>
@@ -30,7 +30,7 @@
         <section class="contact-section">
           <h3 class="section-title">Contact</h3>
           <ul class="contact-list list">
-            <li><b>Phone:</b> <a href="tel:+79153202909">+7 915 320 2909</a></li>
+            <li><b>Phone:</b> <a href="tel:+79153202909">+7&nbsp;915&nbsp;320&nbsp;2909</a></li>
             <li><b>E-mail:</b> <a href="mailto:sp.ether@yandex.ru">sp.ether@yandex.ru</a></li>
             <li><b>Telegram:</b> <a href="https://t.me/chspeth">@chspeth</a></li>
             <li><b>GitHub:</b> <a href="https://github.com/chspeth" target="_blank">chspeth</a></li>
@@ -88,7 +88,7 @@
                     <img class="project-preview" src="./assets/img/device-preview.png" alt="First project: Device">
                   </a>
                   <figcaption>
-                    <a href="https://github.com/chspeth/605741-device-32">My first project</a>. <br>Online store of devices with two pages. Available for watching it on github pages. You’ll find the second page in the Catalog > Selfie monopods.
+                    <a href="https://github.com/chspeth/605741-device-32">My first project</a>. <br>Online store of devices with two pages. Available for watching it on github pages. You’ll find the second page in the Catalog &gt; Selfie monopods.
                   </figcaption>
                 </figure>
               </li>
@@ -140,7 +140,7 @@ const errorButton = alert.querySelector('.error__button');
 document.body.append(alert);
 alert.style.display = 'none';
 
-const onAlertEscKeydown = (evt) => {
+const onAlertEscKeydown = (evt) =&gt; {
   if (isEscapeKey(evt)) {
     evt.preventDefault();
     hideAlert();
@@ -150,11 +150,11 @@ const onAlertEscKeydown = (evt) => {
 function showAlert () {
   alert.style.display = 'block';
   document.addEventListener('keydown', onAlertEscKeydown);
-  alert.addEventListener('click', () => {
+  alert.addEventListener('click', () =&gt; {
     hideAlert();
   });
 
-  setTimeout(() => {
+  setTimeout(() =&gt; {
     hideAlert();
   }, ALERT_TIME);
 }
@@ -164,11 +164,11 @@ function hideAlert () {
   document.removeEventListener('keydown', onAlertEscKeydown);
 }
 
-errorButton.addEventListener('click', () => {
+errorButton.addEventListener('click', () =&gt; {
   hideAlert();
 });
 
-const showFailMessage = (message) => {
+const showFailMessage = (message) =&gt; {
   const failMessageContainer = document.createElement('div');
   failMessageContainer.style.zIndex = '100';
   failMessageContainer.style.position = 'absolute';
@@ -184,7 +184,7 @@ const showFailMessage = (message) => {
 
   document.body.append(failMessageContainer);
 
-  setTimeout(() => {
+  setTimeout(() =&gt; {
     failMessageContainer.remove();
   }, ALERT_TIME);
 };
