@@ -279,3 +279,7 @@ body {
 .footer-gh-text {
   padding-left: 33px;
 }
+
+a:hover {
+  opacity: 0.7;
+}
