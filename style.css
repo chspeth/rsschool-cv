@@ -16,7 +16,7 @@ body {
   min-height: 50px;
   max-width: 1024px;
   margin: 0 auto;
-  background-color: #ffe5b4;
+  background-color: tomato;
   border: 1px solid #000000;
   border-bottom: none;
 }
