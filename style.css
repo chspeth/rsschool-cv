@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 23px;
+  background-color: #f5f5f5;
+  color: #7a6545;
+  overflow-x: hidden;
+  padding-top: 15px;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #efefef;
+}
+
+.page-main a {
+  cursor: pointer;
+  color: #7a6545;
+  text-decoration: none;
+}
+
+.left-column {
+  font-size: 15px;
+  position: relative;
+  width: 325px;
+  padding-left: 25px;
+  background-color: #edeaea;
+}
+
+.right-column {
+  box-sizing: border-box;
+  padding: 0 20px 25px;
+  width: 674px;
+  text-align: center;
+}
+
+.right-column section {
+  margin-bottom: 35px;
+}
+
+.section-title {
+  color: #f46f2b;
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.right-column .section-title {
+  font-size: 21px;
+}
+
+.page-title {
+  margin-top: 280px;
+  margin-bottom: 13px;
+  margin-left: 35px;
+  font-size: 24px;
+  color: #7a6545;
+}
+
+.page-subtitle {
+  margin-top: 0;
+  margin-bottom: 35px;
+  margin-left: 41px;
+  font-size: 18px;
+}
+
+.profile-pic {
+  position: absolute;
+  top: 35px;
+  left: 80px;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: rgba(244, 111, 43, 0.48) 10px 10px 35px 5px;
+}
+
+.contact-section::before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: "";
+  top: 35px;
+  left: 80px;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background-color: rgba(244, 111, 43, 0.48);
+}
+
+.list {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
+
+.profile-title {
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.text-about {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.education-list {
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.projects-list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+  align-content: flex-start;
+}
+
+.projects-list figure {
+  margin: 0;
+}
+
+.projects-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.project-technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  max-width: 120px;
+}
+
+.technologies-img {
+  width: 30px;
+}
+
+.project-name {
+  /* color: #45bfc0; */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* .projects-item:not(:last-child) {
+  margin-bottom: 25px;
+  border-bottom: 2px dotted #022698;
+} */
+
+.project-preview {
+  width: 300px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* .example-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.example-section details {
+  cursor: pointer;
+}
+
+.example-section summary {
+  margin-bottom: 20px;
+}
+
+.example-section summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.example-section pre {
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #f6f8fa;
+  font-size: 13px;
+  color: #000000;
+} */
+
+.page-footer {
+  box-sizing: border-box;
+  max-width: 1024px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  background-color: #1a1f32;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.footer-link {
+  text-decoration: none;
+  display: block;
+}
+
+.footer-text {
+  display: block;
+  padding-top: 6px;
+  color: #ffffff;
+}
+
+.footer-gh-link {
+  position: relative;
+}
+
+.footer-gh-link svg {
+  position: absolute;
+}
+
+.footer-gh-text {
+  padding-left: 33px;
+}
+
+a:hover {
+  opacity: 0.7;
+  color: rgb(244, 111, 43);
+}
+
+a:active {
+  opacity: 0.4;
+  color: #45bfc0;
+}
+
+.title-point {
+  font-size: 30px;
+  color: #45bfc0;
+}
+
+.decorating-cv {
+  margin: 0;
+  margin-top: 60px;
+  text-align: left;
+  font-size: 40px;
+  color: #45bfc0;
+}
+
+.cv {
+  color: #f46f2b;
+}
